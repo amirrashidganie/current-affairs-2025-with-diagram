@@ -20,8 +20,8 @@ const IconGlobe = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/
 const IconRefreshCw = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg>);
 const IconChevronRight = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>);
 const IconChevronDown = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>);
-const IconZap = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20V8H5L13 2v12h6L11 20z" /></svg>);
-const IconGrid = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></svg>);
+// const IconZap = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20V8H5L13 2v12h6L11 20z" /></svg>);
+// const IconGrid = (props:any) => (<svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></svg>);
 
 declare module 'react' {
   interface StyleHTMLAttributes<T> extends React.HTMLAttributes<T> {
@@ -301,7 +301,7 @@ const DiagramFlow = ({ data, showNames }:any) => (
       <div key={idx} className="flex items-center flex-col md:flex-row">
         <div className="flex flex-col justify-center bg-blue-50 border-2 border-blue-200 p-4 rounded-xl shadow-md w-48 text-center min-h-20">
           <div className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">{item.role}</div>
-          <div className={`font-bold text-gray-800 transition-opacity min-h-[1.5rem] text-sm ${showNames ? '' : 'blur-sm select-none'}`}>
+          <div className={`font-bold text-gray-800 transition-opacity min-h-6 text-sm ${showNames ? '' : 'blur-sm select-none'}`}>
             {item.name}
           </div>
           {item.extra && <div className="text-xs text-gray-500 mt-1">{item.extra}</div>}
