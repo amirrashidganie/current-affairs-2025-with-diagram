@@ -12,7 +12,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(),tailwindcss(), /* other plugins like react() */],
-  base:"/current-affairs-2025-with-diagram/"
+  base:"/"
   // Remove any 'css: { postcss: { ... } }' block
 });
 
